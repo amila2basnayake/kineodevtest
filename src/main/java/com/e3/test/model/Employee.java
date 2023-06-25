@@ -15,6 +15,10 @@ public class Employee {
     private String firstName;
     private String lastName;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private Company company;
+
     public Long getId() {
         return id;
     }
@@ -37,5 +41,13 @@ public class Employee {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

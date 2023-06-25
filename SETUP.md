@@ -24,6 +24,6 @@ The project is a spring boot project. The following command will build the modul
 
 Example endpoints:
 
-`http://localhost:8080/company/1`
+`+
 `http://localhost:8080/employee/1`
 
